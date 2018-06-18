@@ -1,55 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnIngresar"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="150dp"
-        android:text="Ingresar"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="307dp" />
-
-    <EditText
-        android:id="@+id/txtUser"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="228dp"
-        android:ems="10"
-        android:hint="   Usuario"
-        android:inputType="textPersonName"
-        android:drawableLeft="@drawable/ic_username"
-        />
-
-    <EditText
-        android:id="@+id/txtPass"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="237dp"
-        android:drawableLeft="@drawable/ic_pass"
-        android:ems="10"
-        android:hint=" Contraseña"
-        android:inputType="textPassword" />
-
-    <TextView
-        android:id="@+id/txtRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="110dp"
-        android:text="Registrate aquí" />
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

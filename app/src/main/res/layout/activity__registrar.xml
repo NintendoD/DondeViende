@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Registrar">
+
+    <EditText
+        android:id="@+id/txtRegistrarNombre"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:hint="Ingrese Nombre" />
+
+    <EditText
+        android:id="@+id/txtRegistrarApellidoP"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="142dp"
+        android:hint="Ingrese Apellido Paterno" />
+
+    <EditText
+        android:id="@+id/txtRegistrarApellidoM"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:hint="Ingrese Apellido Materno" />
+
+    <EditText
+        android:id="@+id/txtRegistrarCelular"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:hint="Ingrese Numero telefonico" />
+
+    <EditText
+        android:id="@+id/txtRegistrarCorreo"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:hint="Ingrese Correo Electronico" />
+
+    <Button
+        android:id="@+id/btnRegistrarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtRegistrarNombre"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="66dp"
+        android:text="Regitrar"
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtRegistrarNombre"
+        android:layout_alignTop="@+id/btnRegistrarUsuario"
+        android:text="Cancelar"
+        android:onClick="onClick"
+        />
+</RelativeLayout>
