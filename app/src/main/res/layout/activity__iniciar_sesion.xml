@@ -9,60 +9,59 @@ android:layout_height="match_parent"
 tools:context=".Activity_IniciarSesion">
 
 
-<EditText
-    android:id="@+id/txtUser"
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="162dp"
-    android:drawableLeft="@drawable/ic_username"
-    android:hint="Usuario"
-    />
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:drawableLeft="@drawable/ic_username"
+        android:hint="Usuario" />
 
 <EditText
     android:id="@+id/txtPass"
     android:layout_width="200dp"
     android:layout_height="wrap_content"
-
-    android:layout_centerInParent="true"
+    android:layout_margin="10dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/txtUser"
     android:drawableLeft="@drawable/ic_pass"
-    android:hint=" Contraseña"
+    android:hint="Contraseña"
     android:inputType="textPassword"
     />
 
-<TextView
-    android:id="@+id/textView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="136dp"
-    android:text="Ó"
-    android:textColor="@android:color/background_dark"
-    />
 
-<Button
-    android:id="@+id/btnIngresar"
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="166dp"
-    android:text="Ingresar"
-    android:onClick="onClick"
-    />
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPass"
+        android:onClick="onClick"
+        android:text="Ingresar" />
 
-<Button
-    android:id="@+id/btnRegistrar"
-    android:layout_width="200dp"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="70dp"
-    android:text="Registrar"
-    android:onClick="onClick"
-    />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnIngresar"
+        android:text="Ó"
+        android:textColor="@android:color/background_dark" />
+
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="Registrar" />
 
 
 

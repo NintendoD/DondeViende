@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class Activity_IniciarSesion extends AppCompatActivity {
 
@@ -18,6 +19,8 @@ public class Activity_IniciarSesion extends AppCompatActivity {
 
         switch (view.getId()){
             case R.id.btnIngresar:
+                miIntent = new Intent(Activity_IniciarSesion.this,MapsActivity.class);
+                startActivity(miIntent);
                 break;
             case R.id.btnRegistrar:
                 miIntent =  new Intent(Activity_IniciarSesion.this, Activity_Registrar.class);

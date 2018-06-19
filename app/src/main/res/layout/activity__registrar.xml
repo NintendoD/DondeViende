@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mapa"
     tools:context=".Activity_Registrar">
 
     <EditText
@@ -12,62 +13,63 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="104dp"
         android:hint="Ingrese Nombre" />
 
     <EditText
         android:id="@+id/txtRegistrarApellidoP"
+        android:layout_margin="10dp"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="142dp"
+        android:layout_below="@+id/txtRegistrarNombre"
         android:hint="Ingrese Apellido Paterno" />
 
     <EditText
         android:id="@+id/txtRegistrarApellidoM"
+        android:layout_margin="10dp"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_below="@+id/txtRegistrarApellidoP"
         android:hint="Ingrese Apellido Materno" />
 
     <EditText
         android:id="@+id/txtRegistrarCelular"
+        android:layout_margin="10dp"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="200dp"
+        android:layout_below="@+id/txtRegistrarApellidoM"
         android:hint="Ingrese Numero telefonico" />
 
     <EditText
         android:id="@+id/txtRegistrarCorreo"
+        android:layout_margin="10dp"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="140dp"
+        android:layout_below="@+id/txtRegistrarCelular"
         android:hint="Ingrese Correo Electronico" />
 
     <Button
         android:id="@+id/btnRegistrarUsuario"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/txtRegistrarNombre"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="66dp"
+        android:layout_below="@+id/txtRegistrarCorreo"
         android:text="Regitrar"
         android:onClick="onClick"
         />
 
     <Button
         android:id="@+id/btnCancelar"
+        android:layout_margin="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/txtRegistrarNombre"
-        android:layout_alignTop="@+id/btnRegistrarUsuario"
+        android:layout_below="@+id/txtRegistrarCorreo"
         android:text="Cancelar"
         android:onClick="onClick"
         />
